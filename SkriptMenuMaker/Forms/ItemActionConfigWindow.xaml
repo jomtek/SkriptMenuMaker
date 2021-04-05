@@ -1,0 +1,24 @@
+﻿<Window x:Class="SkriptMenuMaker.ItemActionConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkriptMenuMaker"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False"
+        Title="ItemActionConfigWindow" Height="300" Width="600" Deactivated="Window_Deactivated">
+    <Grid Margin="0">
+        <DockPanel Margin="0">
+            <ComboBox x:Name="ActionCMB" FontSize="24" FontFamily="Montserrat" Padding="10" Margin="0" DockPanel.Dock="Top" SelectionChanged="ActionCMB_SelectionChanged" />
+            <StackPanel x:Name="ArgumentsSP" Margin="15,20,0,0" DockPanel.Dock="Bottom" Background="White"/>
+        </DockPanel>
+        <TextBlock x:Name="NoArgTB" TextWrapping="Wrap" Text="No argument needed" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="185.01,147.438,185.01,118.181" FontSize="20" FontFamily="Montserrat" Padding="5">
+            <TextBlock.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </TextBlock.Background>
+        </TextBlock>
+    </Grid>
+</Window>

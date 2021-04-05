@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkriptMenuMaker"
+        xmlns:Controls="clr-namespace:SkriptMenuMaker.Controls" x:Class="SkriptMenuMaker.ItemSearchWindow"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False"
+        Title="ItemSearchWindow" Height="350" Width="300" Background="{x:Null}" Deactivated="Window_Deactivated">
+    <Border BorderThickness="1" Background="White" BorderBrush="Black">
+        <Grid Margin="0">
+            <Grid.Effect>
+                <DropShadowEffect Color="Black" Direction="300" BlurRadius="8" ShadowDepth="10"/>
+            </Grid.Effect>
+            <ScrollViewer Margin="0">
+                <StackPanel x:Name="ItemsSP"/>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</Window>
